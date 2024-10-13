@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@logseq/libs": "^0.0.10",
+    "crypto-es": "^2.1.0",
     "react": "17.0.2"
   },
   "alias": {
