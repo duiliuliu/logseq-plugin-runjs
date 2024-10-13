@@ -31,9 +31,9 @@ export default function (props: { content: string }) {
         // focus the window
         window.focus();
         navigator.clipboard.writeText(elRef.current.innerText);
-        logseq.UI.showMsg(elRef.current.innerText, "copy success")
+        logseq.UI.showMsg(`[:p "copy success" [:br] "${elRef.current.innerText}"]`, "success")
       } catch (error) {
-        logseq.UI.showMsg(elRef.current.innerText, "copy error")
+        logseq.UI.showMsg('copy error', "error")
         console.log("copy error", error)
       }
     });
